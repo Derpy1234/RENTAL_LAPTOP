@@ -7,7 +7,8 @@
     </div>
 @endif 
 <br>
-<a href="/">Back</a>
+
+<center><a href="/" class="btn btn-warning mb-5">Back</a></center>
 <table class="table table-success table-striped table-bordered">
     <tr>
         <td>NIS</td>
