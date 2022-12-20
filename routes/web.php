@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,11 @@ use App\Http\Controllers\DataController;
 |
 */
 
-Route::get('/', [DataController::class, 'index']);
+Route::get('/dashboard', [DataController::class, 'index'])->name('index');
 Route::post('/store', [DataController::class, 'store'])->name('store');
 Route::get('/data', [DataController::class, 'data']);
 Route::delete('/destroy/{id}', [DataController::class, 'destroy']);
 Route::patch('/update/{id}', [DataController::class, 'update']);
+
+
+Route::get('/', [LoginController::class, 'indexLogin'])->name('login')->middleware('guest');

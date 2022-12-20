@@ -1,6 +1,17 @@
 body{
-    background-image: url(blob-scene-haikei.png);
+    background-image: url(blob-scene-haikei1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+
+.navbar-nav {
+    position: absolute;
+	right: 1%;
+}
+
+
+
+h1 {
+    padding-left: 370px;
 }
